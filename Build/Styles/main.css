@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    font-family: "Raleway", "Open-Sans", "serif";
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  
+}
+
+header {
+    height:100px;
+    width: 100%;
+}
+
+.ellipse {
+    position: absolute;
+    left: 2%;
+    top: 29.68px;
+}
+@media screen and (max-width: 600px) {
+    .ellipse {
+        top: 10.68px;
+    }
+    .ellipse img {
+    width: 70%;
+    }
+}
+nav ul {
+    position: relative;
+    height: 49px;
+    top: 19.68px;
+    display: flex;
+    flex-direction: row-reverse;
+
+} 
+nav ul li {
+    line-height: 19px;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+
+@media screen and (min-width: 600px) {
+  
+    nav ul {
+        margin-right: 3%;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    position: relative;
+    color: white;
+    display: inline-block;
+    width: 75%;
+    left: 10%;
+    top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        display: inline;
+        left: 10%;
+        top: 20px;
+        font-size: 24px;
+        line-height: 19px;
+    }
+}
+
+h1 { 
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    width: 45%;
+}
+
+.hi {
+    font-size: 15px;
+    margin-right: 120;
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 12px;
+    }
+    .hi {
+    font-size: 14px;
+    }
+}
+
+
+.brief, .brief-2 {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 15px;
+    /* or 156% */
+    width: 35%;
+}
+@media screen and (max-width: 700px) {
+    nav ul li a{
+    font-size: 9px;
+    }
+    .brief {
+    font-size: 10px;
+    width: 60%;
+    }
+    .brief-2 {
+        font-size: 10px;
+        width: 70%;
+    }
+}
+   
+button {
+    position: relative;
+    background-color: #F9D311;
+    border-radius: 32.1px;
+    width: 120px;
+    padding: 5px;
+    border:  none;
+}
+
+.arrow {
+    position: relative;
+    top: 1px;
+    width: 80px;
+}
+
+.orn1 {
+    position: absolute;
+    top: 146px;
+    left: 3%;
+    width: 100px;
+   
+}
+
+.orn2 {
+    position: absolute;
+    width: 100px;
+    left: 4%;
+    top: 140px;
+}
+
+.orn3 {
+position: absolute;
+width: 79px;
+right: 4%;
+top: 75.48px;
+transform: rotate(35.06deg);
+}
+
+.rachealPic {
+    position: absolute;
+    width: fit-content;
+    top: 130px;
+    left: 65%;
+    
+}
+.imageBorder {
+    position: absolute;
+    width: fit-content;
+    top: 125px;
+    left: 66.1%;
+}
+.rachealPic img  {
+    width: 100px;
+    height: 110px;
+    border-radius: 10px;
+}
+.imageBorder img {
+    width: 100px;
+
+}
+
+@media screen and (min-width: 700px) {
+    .imageBorder {
+        top: 120px;
+    }
+    .rachealPic img  {
+        left: 80%;
+        width: 170px;
+        height: 190px;
+    }
+    .imageBorder img {
+        left: 80%;
+        width: 170px;
+
+    }
+}
+
+.yellowtext {
+    color: #F9D311;
+}
+.contacts {
+    position: relative;
+    display: inline-flex;
+    margin-left: -45px;
+}
+.contacts li {
+    list-style-type: none;
+}
+.contacts li img {
+    margin: 3px;
+}
