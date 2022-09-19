@@ -6,7 +6,7 @@ body {
     font-weight: 500;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(36, 35, 35);
     display: flex;
     flex-direction: column;
     max-height: 100vh;
@@ -60,27 +60,20 @@ a {
     font-size: 16px;
     color: white;
 }
-a:hover {
-    text-decoration: underline;
+
+.body {
+    display: inline-flex;
+    margin: 50px;
+    top: -50px;
 }
 
-section {
+.body section {
     position: relative;
     color: white;
-    display: inline-block;
-    width: 75%;
-    left: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
     top: 20px;
-}
-
-@media screen and (min-width: 600px) {
-    section {
-        display: inline;
-        left: 10%;
-        top: 20px;
-        font-size: 24px;
-        line-height: 19px;
-    }
+    
 }
 
 h1 { 
@@ -91,9 +84,10 @@ h1 {
 }
 
 .hi {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 120;
     width: fit-content;
+    font-weight: normal;
 }
 
 
@@ -112,9 +106,7 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.1em;
-    line-height: 15px;
-    /* or 156% */
-    width: 35%;
+    width: 40%;
 }
 @media screen and (max-width: 700px) {
     nav ul li a{
@@ -134,9 +126,15 @@ button {
     position: relative;
     background-color: #F9D311;
     border-radius: 32.1px;
-    width: 120px;
+    width: 150px;
     padding: 5px;
     border:  none;
+    color: rgb(36, 35, 35);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f9d2118a;
 }
 
 .arrow {
@@ -168,47 +166,60 @@ top: 75.48px;
 transform: rotate(35.06deg);
 }
 
-.rachealPic {
-    position: absolute;
+.boluPic {
+    /* position: absolute; */
     width: fit-content;
-    top: 130px;
-    left: 65%;
+    height: fit-content;
+    margin: 30px;
+    margin-left: -100px;
+    left: 40px
     
 }
-.imageBorder {
-    position: absolute;
-    width: fit-content;
-    top: 125px;
-    left: 66.1%;
-}
-.rachealPic img  {
+
+.boluPic img  {
     width: 100px;
     height: 110px;
     border-radius: 10px;
 }
-.imageBorder img {
-    width: 100px;
 
+.boluPic img:hover {
+    /* transform: rotate(45deg); */
+    animation: pulse 3s;
 }
+@keyframes pulse {
+    0% {
+      transform: scale(.85);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+    }
+      100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+    }
+  }
 
 @media screen and (min-width: 700px) {
-    .imageBorder {
-        top: 120px;
-    }
-    .rachealPic img  {
-        left: 80%;
+    .boluPic img  {
+        margin-left: -105%;
         width: 170px;
         height: 190px;
-    }
-    .imageBorder img {
-        left: 80%;
-        width: 170px;
-
     }
 }
 
 .yellowtext {
     color: #F9D311;
+}
+
+.socials {
+    color: whitesmoke;
+    margin-top: -45px;
+    margin-left: 45px;
+    width: 80%;
+}
+.socials p {
+    width: 75%
 }
 .contacts {
     position: relative;
@@ -220,4 +231,7 @@ transform: rotate(35.06deg);
 }
 .contacts li img {
     margin: 3px;
+}
+.contacts li img:hover {
+    scale: 150%;
 }
