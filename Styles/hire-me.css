@@ -109,21 +109,29 @@ button:hover {
     width: 80%;
 }
 .portfolio figure {
-    background-color: #262525;
+    background-color: #3d3a288a;
     width: 180px;
     border-radius: 10px;
     margin: 10px;
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 450px;
+    min-height: fit-content;
+}
 
+figcaption {
+    padding: 5px;
 }
 
 .portfolio figure img {
     width: 100%;
+    border-radius: 10px;
+    height: 200px
 }
 
 @media screen and (min-width: 1020px) {
     .portfolio figure {
-        width: 250px;
+        width: 280px;
     } 
 }
 
