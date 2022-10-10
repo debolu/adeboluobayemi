@@ -126,8 +126,9 @@ button {
     position: relative;
     background-color: #F9D311;
     border-radius: 32.1px;
-    width: 150px;
-    padding: 5px;
+    width: 170px;
+    height: 42px;
+    padding: 5px 15px;
     border:  none;
     color: rgb(36, 35, 35);
     cursor: pointer;
